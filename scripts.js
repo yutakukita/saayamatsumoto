@@ -32,18 +32,18 @@ document.addEventListener( 'DOMContentLoaded', function () {
   text.mount();
 } );
 
-//--- Fix the navigation at the top of the page after scrollong ---//
-//   $(function() {
-//     var offset = $('#global-nav').offset();
+// --- Fix the navigation at the top of the page after scrollong ---//
+  $(function() {
+    var offset = $('#live').offset();
  
-//     $(window).scroll(function () {
-//         if ($(window).scrollTop() > offset.top) {
-//             $('#global-nav').addClass('nav_fixed');
-//         } else {
-//             $('#global-nav').removeClass('nav_fixed');
-//         }
-//     });
-// });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > offset.top/2) {
+            $('.sns-link').addClass('sns-link-show');
+        } else {
+            $('.sns-link').removeClass('sns-link-show');
+        }
+    });
+});
 
 //--- FADE-IN---//
 if(!navigator.userAgent.match(/(iPhone|iPad)/)){
@@ -186,3 +186,12 @@ $(function () {
   });
 
 });
+
+//--- Change the colour of sns icons ---// 
+// $(function(){ 
+// 	$(window).scroll(function(){ //セクション２から３の間はこれ 
+// 		if ($(window).scrollTop() > $('#live').offset().top &&　$(window).scrollTop() < $('#bio').offset().top){ $(".sns-item i").css("color", "rgba(255,255,255,0.8)"); }//セクション３より進んだらこれ 
+// 		else if ($(window).scrollTop() > $('#bio').offset().top &&　$(window).scrollTop() < $('#lesson').offset().top){ $(".sns-item i").css("color", "#263F5B"); }
+// 		else if ($(window).scrollTop() > $('#lesson').offset().top &&　$(window).scrollTop() < $('#contact').offset().top){ $(".sns-item i").css("color", "rgba(255,255,255,0.8)"); }
+// 		else if ($(window).scrollTop() > $('#contact').offset().top){ $(".sns-item i").css("color", "#263F5B"); }else//それ以外（つまりセクション１である場合）はこれ 
+// 	$("nav ul li").css("color", "#000"); }); }); 
