@@ -169,13 +169,6 @@ figcaption{
 	text-align: center;
 }
 
-.fade {
-  opacity: 1;
-  transform: translate(0);
-	/* animation-name: fade;
-	animation-duration: 2s; */
-}
-
 .fade-in {
 	opacity: 0;
   transition-delay: 0.5s;
