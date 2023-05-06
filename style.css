@@ -3,6 +3,7 @@
 html {
   font-size: 65.5%;  /* 10px (100% --> 16px) */
   overflow-y: overlay; 
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -717,9 +718,9 @@ textarea.c-form__input {
 	background-color: transparent;
 }
 
-@media (min-width: 600px) {
+@media (orientation: portrait) {
   .c-form__item {
-		flex-wrap: nowrap;
+		flex-direction: column;
 	}
 
   .c-form__label {
@@ -742,10 +743,27 @@ textarea.c-form__input {
   z-index: 2;
 }
 
+.cd-fixed-bg.bg-hero:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  height: 100lvh;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(to left, transparent 0%, transparent 80%, #fff 100%), linear-gradient(to right, transparent 50%, transparent 80%, #fff 100%), linear-gradient(to bottom, transparent 0%, transparent 90%, #fff 100%), url(./images/background/hero.webp) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .cd-fixed-bg.bg-hero {
-  background-image: linear-gradient(to left, transparent 0%, transparent 90%, #fff 100%), linear-gradient(to right, transparent 0%, transparent 90%, #fff 100%), linear-gradient(to bottom, transparent 0%, transparent 90%, #fff 100%), url(./images/background/hero.webp);
-  background-position: top;
-  background-size: 1200px;
+  /* background-image: linear-gradient(to left, transparent 0%, transparent 80%, #fff 100%), linear-gradient(to right, transparent 50%, transparent 80%, #fff 100%), linear-gradient(to bottom, transparent 0%, transparent 90%, #fff 100%), url(./images/background/hero.webp); */
+  /* background-position: left center; */
+  /* background-size: auto 100lvh; */
+  /* background-size: auto 100lvh; */
+  /* background-size: 1200px; */
 }
 
 .cd-fixed-bg.bg-live {
@@ -757,7 +775,7 @@ textarea.c-form__input {
 .cd-fixed-bg.bg-bio {
   background-image: url(./images/background/bio.webp);
   background-position: center bottom;
-  background-size: 100vw auto;
+  /* background-size: auto 100lvh; */
 } 
 
 .cd-fixed-bg.bg-lesson {
@@ -766,11 +784,11 @@ textarea.c-form__input {
   background-position: top;
 } 
 
-/* mobile */
-@media screen and (max-width: 600px) {
+/* mobile (max-width: 600px) */
+@media (orientation: portrait) {
 
   body {
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   .mobile-off {
@@ -784,7 +802,7 @@ textarea.c-form__input {
   /* header */
   #hero-contents {
     width: auto;
-    padding-top: 25%;
+    padding-top: 30%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -804,7 +822,7 @@ textarea.c-form__input {
   /* Live */
   #live .container {
     align-items: center;
-    width: 100%;
+    max-width: 480px;
     color: white;
   }
 
@@ -850,13 +868,18 @@ textarea.c-form__input {
   /* Biography */
   #bio .container {
     flex-direction: column;
+    max-width: 480px;
   }
   
-  .bio-en, .bio-ja {
+  .bio-en {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .bio-ja {
     width: 100%;
     height: 100svh;
     margin-bottom: 10%;
-    /* font-size: 120%; */
   }
 
   /* Lesson */
@@ -866,6 +889,7 @@ textarea.c-form__input {
 
   #lesson .container {
     justify-content: space-evenly;
+    max-width: 480px;
   }
 
   .lesson-item {
@@ -875,6 +899,7 @@ textarea.c-form__input {
   /* Contact */
   #contact {
     padding-top: 5svh;
+    /* max-width: 600px; */
   }
 
   .c-form {
@@ -882,14 +907,29 @@ textarea.c-form__input {
   }
 
   .c-form__label {
-    width: 90%;
+    width: 100%;
     font-size: 160%;
     text-align: left;
   }
 
+  .c-form__input {
+    width: 100%;
+  }
 
 
   /* Background */
+  .cd-fixed-bg.bg-hero::before {
+    content: '';
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+  }
+
   .cd-fixed-bg.bg-hero {
     background-image: url(./images/background/hero-mobile.webp);
     background-position: center bottom;
@@ -898,7 +938,8 @@ textarea.c-form__input {
 
   .cd-fixed-bg.bg-live {
     background-image: url(./images/background/live-mobile.webp);
-    background-position: right bottom;
+    background-position: right top;
+    background-size: 100% auto;
   }
 
   .cd-fixed-bg.bg-live::before {
