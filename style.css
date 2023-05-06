@@ -473,8 +473,8 @@ main p {
 }
 
 #live, #works, #bio, #lesson {
-  min-height: 100svh;
-  padding-top: 10svh;
+  min-height: 100lvh;
+  padding-top: 10lvh;
   padding-left: 5%;
   padding-right: 5%;
 }
