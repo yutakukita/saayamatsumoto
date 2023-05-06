@@ -762,11 +762,13 @@ textarea.c-form__input {
 .cd-fixed-bg.bg-live {
   background-image: linear-gradient(to right,black 50%, transparent 70%, black 100%), url(./images/background/live.webp);
   background-position: right bottom;
+  background-size: cover;
 }
 
 .cd-fixed-bg.bg-bio {
   background-image: url(./images/background/bio.webp);
   background-position: center bottom;
+  background-size: cover;
 } 
 
 .cd-fixed-bg.bg-lesson {
