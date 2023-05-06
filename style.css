@@ -751,7 +751,7 @@ textarea.c-form__input {
   /* background-size: 1200px; */
 }
 
-.bg-hero:after {
+.cd-fixed-bg.bg-hero:after {
   content: "";
   position: fixed;
   top: 0;
@@ -759,7 +759,8 @@ textarea.c-form__input {
   left: 0;
   right: 0;
   z-index: -1;
-  background: linear-gradient(to left, transparent 0%, transparent 80%, #fff 100%), linear-gradient(to right, transparent 50%, transparent 80%, #fff 100%), linear-gradient(to bottom, transparent 0%, transparent 90%, #fff 100%), url(./images/background/hero.webp) left center;
+  background-image: linear-gradient(to left, transparent 0%, transparent 80%, #fff 100%), linear-gradient(to right, transparent 50%, transparent 80%, #fff 100%), linear-gradient(to bottom, transparent 0%, transparent 90%, #fff 100%), url(./images/background/hero.webp);
+  background-position: left center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -772,7 +773,7 @@ textarea.c-form__input {
   background-size: auto 100lvh;
 } */
 
-.bg-live:after {
+.cd-fixed-bg.bg-live:after {
   content: "";
   position: fixed;
   top: 0;
@@ -780,7 +781,8 @@ textarea.c-form__input {
   left: 0;
   right: 0;
   z-index: -1;
-  background: linear-gradient(to right,black 50%, transparent 70%, black 100%), url(./images/background/live.webp) right bottom;
+  background: linear-gradient(to right,black 50%, transparent 70%, black 100%), url(./images/background/live.webp);
+  background-position: right bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -792,7 +794,7 @@ textarea.c-form__input {
   background-position: center bottom;
 }  */
 
-.bg-bio:after {
+.cd-fixed-bg.bg-bio:after {
   content: "";
   position: fixed;
   top: 0;
@@ -800,7 +802,8 @@ textarea.c-form__input {
   left: 0;
   right: 0;
   z-index: -1;
-  background: url(./images/background/bio.webp) center bottom;
+  background: url(./images/background/bio.webp);
+  background-position: center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
