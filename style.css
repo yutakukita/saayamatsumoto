@@ -733,7 +733,7 @@ textarea.c-form__input {
 }
 
 /* Background */
-.cd-fixed-bg {
+/* .cd-fixed-bg {
   position: relative;
   min-height: 100%;
   background-size: cover;
@@ -741,22 +741,7 @@ textarea.c-form__input {
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 2;
-}
-
-.cd-fixed-bg.bg-hero:after {
-  content: "";
-  position: fixed;
-  top: 0;
-  height: 100lvh;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  background: linear-gradient(to left, transparent 0%, transparent 80%, #fff 100%), linear-gradient(to right, transparent 50%, transparent 80%, #fff 100%), linear-gradient(to bottom, transparent 0%, transparent 90%, #fff 100%), url(./images/background/hero.webp) center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+} */
 
 .cd-fixed-bg.bg-hero {
   /* background-image: linear-gradient(to left, transparent 0%, transparent 80%, #fff 100%), linear-gradient(to right, transparent 50%, transparent 80%, #fff 100%), linear-gradient(to bottom, transparent 0%, transparent 90%, #fff 100%), url(./images/background/hero.webp); */
@@ -766,23 +751,62 @@ textarea.c-form__input {
   /* background-size: 1200px; */
 }
 
-.cd-fixed-bg.bg-live {
+.bg-hero:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  height: 100lvh;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(to left, transparent 0%, transparent 80%, #fff 100%), linear-gradient(to right, transparent 50%, transparent 80%, #fff 100%), linear-gradient(to bottom, transparent 0%, transparent 90%, #fff 100%), url(./images/background/hero.webp) left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* .cd-fixed-bg.bg-live {
   background-image: linear-gradient(to right,black 50%, transparent 70%, black 100%), url(./images/background/live.webp);
   background-position: right bottom;
   background-size: auto 100lvh;
+} */
+
+.bg-live:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  height: 100lvh;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(to right,black 50%, transparent 70%, black 100%), url(./images/background/live.webp) right bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.cd-fixed-bg.bg-bio {
+/* .cd-fixed-bg.bg-bio {
   background-image: url(./images/background/bio.webp);
   background-position: center bottom;
-  /* background-size: auto 100lvh; */
-} 
+}  */
 
-.cd-fixed-bg.bg-lesson {
-  background-image: url(./images/background/lesson.webp);
+.bg-bio:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  height: 100lvh;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: url(./images/background/bio.webp) center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: top;
-} 
+}
+
 
 /* mobile (max-width: 600px) */
 @media (orientation: portrait) {
