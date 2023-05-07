@@ -314,7 +314,7 @@ header {
 #hero-contents {
   margin-left: auto;
   margin-right: 0;
-  padding-top: 25%;
+  /* padding-top: 25%; */
   height: 100%;
   width: 50%;
   display: flex;
@@ -591,12 +591,12 @@ ul.works-credit {
 	padding: 10px;
 }
 .c-form__label {
-	width: 90%;
+	width: 40%;
   font-size: 160%;
   text-align: right;
 }
 .c-form__input {
-	width: 90%;
+	width: 50%;
 	font-size: 160%;
 	border: solid 1px #333;
 	border-radius: 4px;
