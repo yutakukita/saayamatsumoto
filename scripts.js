@@ -11,12 +11,12 @@ $(document).ready(function() {
 	});
 
 	  // Adjust the section height when the window is resized
-	  $(window).resize(function() {
-		$('#live').each(function() {
-		  var contentHeight = $(this).find('.container').outerHeight();
-		  $(this).css('height', Math.max($(window).height(), contentHeight) + 'px');
-		});
-	  });
+	//   $(window).resize(function() {
+	// 	$('#live').each(function() {
+	// 	  var contentHeight = $(this).find('.container').outerHeight();
+	// 	  $(this).css('height', Math.max($(window).height(), contentHeight) + 'px');
+	// 	});
+	//   });
 	
   });
   
