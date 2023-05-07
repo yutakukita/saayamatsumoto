@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="fontello/css/fontello.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
     <title>Saaya Matsumoto | Pianist</title>
     <meta name="description" content=””>
   </head>
@@ -249,15 +251,20 @@
     </footer>
 
     <!-- Javascripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
     <script>
+      if (navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
+        var sheet = document.styleSheets[0];
+        sheet.insertRule('.cd-fixed-bg { background-attachment: touch !important; }', sheet.cssRules.length);
+      }
+    </script>
+    <!-- <script>
       if (navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
         var elements = document.getElementsByClassName('cd-fixed-bg');
         for(i=0;i<elements.length;i++){
           elements[i].style.backgroundAttachment = "touch";
         }
       }
-    </script>
+    </script> -->
   </body>
 </html>
