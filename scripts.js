@@ -1,24 +1,24 @@
 // JavaScript Document
 
 //--- Adjust height of sections to fit the contents ---//
-$(document).ready(function() {
-	// Loop through each section
-	$('#live').each(function() {
-	  // Get the height of the content inside the section
-	  var contentHeight = $(this).find('.container').outerHeight();
-	  // Set the section height to be the maximum of the window height and the content height
-	  $(this).css('height', Math.max($(window).height(), contentHeight) + 'px');
-	});
+// $(document).ready(function() {
+// 	// Loop through each section
+// 	$('#live').each(function() {
+// 	  // Get the height of the content inside the section
+// 	  var contentHeight = $(this).find('.container').outerHeight();
+// 	  // Set the section height to be the maximum of the window height and the content height
+// 	  $(this).css('height', Math.max($(window).height(), contentHeight) + 'px');
+// 	});
 
-	  // Adjust the section height when the window is resized
-	//   $(window).resize(function() {
-	// 	$('#live').each(function() {
-	// 	  var contentHeight = $(this).find('.container').outerHeight();
-	// 	  $(this).css('height', Math.max($(window).height(), contentHeight) + 'px');
-	// 	});
-	//   });
+// 	  // Adjust the section height when the window is resized
+// 	//   $(window).resize(function() {
+// 	// 	$('#live').each(function() {
+// 	// 	  var contentHeight = $(this).find('.container').outerHeight();
+// 	// 	  $(this).css('height', Math.max($(window).height(), contentHeight) + 'px');
+// 	// 	});
+// 	//   });
 	
-  });
+//   });
   
 // #live
 // var live_section = document.getElementByld('live');
