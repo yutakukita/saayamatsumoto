@@ -80,11 +80,11 @@ body {
   transition: 0.5s;
 }
 
-.sns-link-show {
+/* .sns-link-show {
   visibility: visible;
   opacity: 0.8;
   transition: 0.5s;
-}
+} */
 
 .sns-link .sns-item {
   position: relative;
@@ -696,7 +696,7 @@ textarea.c-form__input {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-attachment: touch;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 2;
