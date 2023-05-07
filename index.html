@@ -253,7 +253,7 @@
     <!-- Javascripts -->
     <script type="text/javascript" src="scripts.js"></script>
     <script type="text/javascript">
-      if (navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
+      if (!navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
          document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"fixparallax.css\" />");
       }
    </script>
