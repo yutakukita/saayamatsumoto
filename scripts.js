@@ -1,13 +1,7 @@
 // JavaScript Document
 
 //--- set background-attachment: touch for iPhones and iPads ---//
-if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-	// User is browsing with an iPhone or iPad
-	var sections = document.querySelectorAll('.cd-fixed-bg');
-	sections.forEach(function(section) {
-	  section.style.backgroundAttachment = 'touch';
-	});
-  }
+
 
 
 //--- sns-link-show ---//
