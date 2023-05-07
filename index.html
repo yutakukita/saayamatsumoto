@@ -253,17 +253,14 @@
     <!-- Javascripts -->
     <script type="text/javascript" src="scripts.js"></script>
     <script type="text/javascript">
+      if (navigator.userAgent.match(/(iPad|iPhone|iPod|Android|Silk)/gi)) {
+         document.write("<link rel=\"stylesheet\" href=\"fixparallax.css\" />");
+      }
+   </script>
+    <!-- <script type="text/javascript">
       if (navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
         var sheet = document.styleSheets[0];
-        sheet.insertRule('.cd-fixed-bg { background-attachment: "touch" !important; }', sheet.cssRules.length);
-      }
-    </script>
-    <!-- <script>
-      if (navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
-        var elements = document.getElementsByClassName('cd-fixed-bg');
-        for(i=0;i<elements.length;i++){
-          elements[i].style.backgroundAttachment = "touch";
-        }
+        sheet.insertRule('.cd-fixed-bg { background-attachment: touch !important; }', sheet.cssRules.length);
       }
     </script> -->
   </body>
