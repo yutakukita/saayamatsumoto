@@ -828,7 +828,7 @@ textarea.c-form__input {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100lvh;
+    height: 100%;
     display: block;
     z-index: -1;
   }
@@ -836,7 +836,6 @@ textarea.c-form__input {
   .cd-fixed-bg.bg-live {
     background-image: url(./images/background/live-mobile.webp);
     background-position: right top;
-    background-size: cover;
   }
 
   .cd-fixed-bg.bg-live::before {
@@ -846,7 +845,7 @@ textarea.c-form__input {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100lvh;
+    height: 100%;
     display: block;
     z-index: -1;
   }
@@ -858,7 +857,7 @@ textarea.c-form__input {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100lvh;
+    height: 100%;
     display: block;
     z-index: -1;
   }
