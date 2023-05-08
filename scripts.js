@@ -1,22 +1,5 @@
 // JavaScript Document
 
-//--- set background-attachment: touch for iPhones and iPads ---//
-// ウインドウの横幅を保持
-var currentWidth = window.innerWidth;
-
-window.addEventListener("resize", function() {
-    if (currentWidth == window.innerWidth) {
-        // ウインドウ横幅が変わっていないため処理をキャンセル。
-        return;
-    }
-
-    // ウインドウ横幅が変わったのでリサイズと見なす。
-    // 横幅を更新
-    currentWidth = window.innerWidth;
-    // alert("ウインドウがリサイズしました。");
-});
-
-
 //--- sns-link-show ---//
 jQuery(function($){
 	// execute when scrolling and loading
