@@ -639,7 +639,7 @@ textarea.c-form__input {
 /* Background - does not work for iOS*/
 .cd-fixed-bg {
   position: relative;
-  min-height: 100lvh;
+  height: 100lvh;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
