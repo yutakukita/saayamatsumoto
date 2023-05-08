@@ -252,11 +252,11 @@
 
     <!-- Javascripts -->
     <script type="text/javascript" src="scripts.js"></script>
-    <!-- <script type="text/javascript">
-      if (!navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
+    <script type="text/javascript">
+      if (!navigator.userAgent.match(/(iPad|iPhone|iPod)/gi) || !navigator.platform === 'MacIntel' && !navigator.maxTouchPoints > 1) {
          document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"fixparallax.css\" />");
       }
-   </script> -->
+   </script>
     <!-- <script type="text/javascript">
       if (navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
         var sheet = document.styleSheets[0];
