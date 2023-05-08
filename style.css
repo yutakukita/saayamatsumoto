@@ -813,7 +813,6 @@ textarea.c-form__input {
   .cd-fixed-bg.bg-hero {
     background-image: url(./images/background/hero-mobile.webp);
     background-position: center bottom;
-    background-size: auto 100lvh;
   }
 
   .cd-fixed-bg.bg-hero::before {
@@ -831,7 +830,6 @@ textarea.c-form__input {
   .cd-fixed-bg.bg-live {
     background-image: url(./images/background/live-mobile.webp);
     background-position: right top;
-    background-size: auto 100lvh;
   }
 
   .cd-fixed-bg.bg-live::before {
@@ -844,10 +842,6 @@ textarea.c-form__input {
     height: 100%;
     display: block;
     z-index: -1;
-  }
-
-  .cd-fixed-bg.bg-bio {
-    background-size: auto 100lvh;
   }
 
   .cd-fixed-bg.bg-bio::before {
