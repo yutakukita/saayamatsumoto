@@ -5,6 +5,6 @@
 @media (orientation: portrait) {
     .cd-fixed-bg {
         background-size: auto 100lvh !important;
-        background-position: center center !important;
+        background-position: center bottom !important;
     }
 }
