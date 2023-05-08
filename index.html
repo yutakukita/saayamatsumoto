@@ -253,15 +253,15 @@
     <!-- Javascripts -->
     <script type="text/javascript" src="scripts.js"></script>
     <script type="text/javascript">
-      if (!navigator.userAgent.match(/(iPad|iPhone|iPod)/gi) || !navigator.platform === 'MacIntel' && !navigator.maxTouchPoints > 1) {
-         document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"fixparallax.css\" />");
+      var ua = window.navigator.userAgent.toLowerCase();
+      if (navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
+      } else if (
+        ua.indexOf("ipad") > -1 ||
+        (ua.indexOf("macintosh") > -1 && "ontouchend" in document)
+      ) {
+      } else {
+        document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"fixparallax.css\" />");
       }
    </script>
-    <!-- <script type="text/javascript">
-      if (navigator.userAgent.match(/(iPad|iPhone|iPod)/gi)) {
-        var sheet = document.styleSheets[0];
-        sheet.insertRule('.cd-fixed-bg { background-attachment: touch !important; }', sheet.cssRules.length);
-      }
-    </script> -->
   </body>
 </html>
